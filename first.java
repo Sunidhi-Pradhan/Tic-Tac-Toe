@@ -17,7 +17,22 @@ class Main{
             int row = scanner.nextInt();
             int col = scanner.nextInt();
 
-            
+            if(board[row][col] == ' ') {
+                board[row][col] = player;
+                if (checkWin(board, player)) {
+                    printBoard(board);
+                    System.out.println("Player " + player + " wins!");
+                    gameOver = true;
+                } else if (isBoardFull(board)) {
+                    printBoard(board);
+                    System.out.println("It's a draw!");
+                    gameOver = true;
+                } else {
+                    player = (player == 'X') ? 'O' : 'X'; // Switch player
+                }
+            } else {
+                System.out.println("Cell already taken. Try again.");
+            }
         }
     }
     public static void printBoard(char[][] board) {
