@@ -6,5 +6,9 @@ class Main{
                 board[row][col] = ' ';
             }
         }
+
+        char player = 'X';
+        boolean gameOver = false;
+        Scanner scanner = new Scanner(System.in);
     }
 }
