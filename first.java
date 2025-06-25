@@ -13,6 +13,11 @@ class Main{
 
         while (!gameOver) {
             printBoard(board);
+            System.out.println("Player " + player + "enter:");
+            int row = scanner.nextInt();
+            int col = scanner.nextInt();
+
+            
         }
     }
     public static void printBoard(char[][] board) {
