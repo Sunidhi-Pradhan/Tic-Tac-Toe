@@ -45,7 +45,7 @@ class Main{
             }
             System.out.println();
             if (row < board.length - 1) {
-                System.out.println("-----");
+                // System.out.println("-----");
             }
         }
     }
