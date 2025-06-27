@@ -15,7 +15,7 @@ class Main{
             printBoard(board);
             System.out.println("Player " + player + "enter:");
             int row = scanner.nextInt();
-            int col = scanner.nextInt();
+            // int col = scanner.nextInt();
 
             if(board[row][col] == ' ') {
                 board[row][col] = player;
