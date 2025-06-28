@@ -11,7 +11,7 @@ class Main{
         boolean gameOver = false;
         Scanner scanner = new Scanner(System.in);
 
-        // while (!gameOver) {
+        while (!gameOver) {
             printBoard(board);
             System.out.println("Player " + player + "enter:");
             int row = scanner.nextInt();
