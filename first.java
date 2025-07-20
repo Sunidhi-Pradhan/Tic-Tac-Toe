@@ -48,9 +48,10 @@ class Main{
                 System.out.println("-----");
             }
         }
-        if (board.length == 0 || board[0].length == 0) {
+        if (board.length == 0 || board[2].length == 0) {
             System.out.println("Invalid board");
             return;
         }
+
     }
 }
