@@ -52,5 +52,6 @@ class Main{
             System.out.println("Invalid board");
             return;
         }
+        
     }
 }
